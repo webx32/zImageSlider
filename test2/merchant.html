@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+    <title>Just For Test</title>
+    <link rel="stylesheet" type="text/css" href="style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/icons.css">
+    <link rel="stylesheet" type="text/css" href="style/topbar.css">
+    <link rel="stylesheet" type="text/css" href="style/image-slider.css">
+    <link rel="stylesheet" type="text/css" href="style/item.css">
+    <link rel="stylesheet" type="text/css" href="style/button.css">
+    <link rel="stylesheet" type="text/css" href="style/list.css">
+    <link rel="stylesheet" type="text/css" href="style/image-wall.css">
+
+    <link rel="stylesheet" type="text/css" href="style/special/merchant-page.css">
+</head>
+<body>
+    <div class='wrap nav-page'>
+
+        <header class="cy-topbar">
+            <div class="logo">
+                <span class="icon icon-back" onclick="window.history.back()"></span>
+            </div>
+            <div class="title">Title</div>
+        </header>
+
+        <article>
+
+            <div class="image-slider" data-z-image-slider='true'>
+                <div class="image-list">
+                    <div class="image-item">
+                        <img class="img-responsive" src="images/1.jpg">
+                    </div>
+                    <div class="image-item">
+                        <img class="img-responsive" src="images/2.jpg">
+                    </div>
+                    <div class="image-item">
+                        <img class="img-responsive" src="images/3.jpg">
+                    </div>
+                    <div class="image-item">
+                        <img class="img-responsive" src="images/4.jpg">
+                    </div>
+                    <div class="image-item">
+                        <img class="img-responsive" src="images/video1.png">
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="scripts/jquery.zImageSlider.js"></script>
+    <script type="text/javascript">
+        $('.image-slider').zImageSlider();
+        $('.image-slider .image-item').on('tap.zImageSlider', function(ev) {
+            console.log(ev);
+        });
+    </script>
+</body>
+</html>

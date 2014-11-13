@@ -1,0 +1,133 @@
+@import 'variables.less';
+@import 'variables-custom.less';
+@import 'mixins.less';
+
+// utilities--------------------------------------------
+.img-responsive, .video-responsive{
+    width: 100%;
+    height: auto;
+}
+.lead-title {
+    color: @title-color;
+    font-size: @font-size-large;
+    font-weight: normal;
+    line-height: 1.4;
+}
+// list
+.unstyled-list {
+    margin-left: 0;
+    list-style: none;
+}
+.hidden {
+    display: none;
+}
+.clearfix {
+    .clearfix();
+}
+.left-rect { // remove left corner
+    .border-left-radius(0);
+}
+.right-rect { // remove right corner
+    .border-right-radius(0);
+}
+
+// container/box--------------------------------------
+.flat-container {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    &.compact {
+        padding: 0 1rem;
+    }
+}
+
+.block-flat { 
+    display: block;
+    width: 100%;
+
+    background-color: #fff;
+    border-bottom: 1px solid @border-color;
+    .header {
+        position: relative;
+        padding: 1.5rem 1.5rem 0;
+        margin-bottom: 1.5rem;
+        .title {
+            .style-text(0, 0);
+        }
+        .subtitle {
+            .style-text(1rem, 0, @text-color, @font-size-normal);
+        }
+        .action {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+
+            &>a {
+                font-size: 1.2rem;
+                color: @brand-warning;
+            }
+        }
+    }
+    .content {
+        margin-top: 1.5rem;
+        padding: 0 1.5rem 1.5rem;
+        &.no-top-padding {
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+}
+
+.block-flat-simple { 
+    display: block;
+    width: 100%;
+    padding: 1rem;
+
+    background-color: #fff;
+    border-bottom: 1px solid @border-color;
+    .header {
+        position: relative;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid @border-color;
+        .title {
+            .style-text(0, 0);
+        }
+        .subtitle {
+            .style-text(1rem, 0, @text-color, @font-size-normal);
+        }
+        .action {
+            position: absolute;
+            right: 1.5rem;
+            top: 0;
+
+            &>a {
+                font-size: 1.2rem;
+                color: @brand-warning;
+            }
+        }
+    }
+    .content {
+        padding-top: 1rem;
+        &.no-top-padding {
+            padding-top: 0;
+        }
+    }
+}
+
+.block-fixed {
+    position: fixed;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 5rem;
+
+    text-align: center;
+
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+    &.fixed-to-bottom {
+        bottom: 0;
+    }
+}

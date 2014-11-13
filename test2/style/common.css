@@ -1,0 +1,138 @@
+.img-responsive,
+.video-responsive {
+  width: 100%;
+  height: auto;
+}
+.lead-title {
+  color: #434a54;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.unstyled-list {
+  margin-left: 0;
+  list-style: none;
+}
+.hidden {
+  display: none;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.left-rect {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.right-rect {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.flat-container {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+.flat-container.compact {
+  padding: 0 1rem;
+}
+.block-flat {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
+}
+.block-flat .header {
+  position: relative;
+  padding: 1.5rem 1.5rem 0;
+  margin-bottom: 1.5rem;
+}
+.block-flat .header .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #434a54;
+}
+.block-flat .header .subtitle {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #99a3b1;
+}
+.block-flat .header .action {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+.block-flat .header .action > a {
+  font-size: 1.2rem;
+  color: #ff7d13;
+}
+.block-flat .content {
+  margin-top: 1.5rem;
+  padding: 0 1.5rem 1.5rem;
+}
+.block-flat .content.no-top-padding {
+  padding-top: 0;
+  margin-top: 0;
+}
+.block-flat-simple {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
+}
+.block-flat-simple .header {
+  position: relative;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+.block-flat-simple .header .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #434a54;
+}
+.block-flat-simple .header .subtitle {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #99a3b1;
+}
+.block-flat-simple .header .action {
+  position: absolute;
+  right: 1.5rem;
+  top: 0;
+}
+.block-flat-simple .header .action > a {
+  font-size: 1.2rem;
+  color: #ff7d13;
+}
+.block-flat-simple .content {
+  padding-top: 1rem;
+}
+.block-flat-simple .content.no-top-padding {
+  padding-top: 0;
+}
+.block-fixed {
+  position: fixed;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.block-fixed.fixed-to-bottom {
+  bottom: 0;
+}

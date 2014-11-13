@@ -1,0 +1,67 @@
+.list-horizontal:before,
+.list-horizontal:after {
+  content: " ";
+  display: table;
+}
+.list-horizontal:after {
+  clear: both;
+}
+.list-horizontal .list-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 1.5rem 1.1rem;
+  background-color: #fff;
+}
+.list-horizontal .list-item {
+  display: block;
+  float: left;
+  width: 33.33333333%;
+  height: 100%;
+  text-align: center;
+}
+.list-horizontal.top-icon .list-item-des {
+  display: block;
+}
+.list-horizontal.left-icon .list-item-des {
+  display: inline-block;
+}
+.list-vertical .list-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4.5rem;
+  padding-left: 3.7rem;
+}
+.list-vertical .list-item:not(:last-child) .text {
+  border-bottom: 1px solid #cccccc;
+}
+.list-vertical .icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1.6rem;
+  width: 2.5rem;
+  height: 3.2rem;
+}
+.list-vertical .text {
+  height: 4.5rem;
+  width: 100%;
+  line-height: 4.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: #99a3b1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.list-vertical.reverse .list-item {
+  padding-left: 0;
+  padding-right: 3.7rem;
+}
+.list-vertical.reverse .icon {
+  left: auto;
+  right: 0;
+}

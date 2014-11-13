@@ -1,0 +1,74 @@
+.btn {
+  display: inline-block;
+  width: 7.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #333333;
+  text-align: center;
+  border: 1px solid #333333;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:focus,
+.btn:active {
+  background-color: #333333;
+  color: #ffffff;
+  outline: none;
+}
+.btn.btn-primary {
+  border-color: #099fde;
+  color: #099fde;
+}
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  background-color: #099fde;
+  color: #fff;
+}
+.btn-reverse {
+  display: inline-block;
+  width: 7.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  color: #333333;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+}
+.btn-reverse:focus,
+.btn-reverse:active {
+  background-color: #e6e6e6;
+  outline: none;
+}
+.btn.btn-block,
+.btn-reverse.btn-block {
+  height: 3.9rem;
+  width: 100%;
+  line-height: 3.9rem;
+  font-size: 1.4rem;
+}
+/*used for normal button
+.btn.btn-primary {
+    background-color: @brand-primary;
+    color: #fff;
+    &:focus, &:active {
+        background-color: darken(@brand-primary, 10%);
+    }
+}
+.btn.btn-block {
+    height: 3.9rem;
+    width: 100%;
+
+    line-height: 3.9rem;
+    font-size: 1.4rem;
+}
+.btn.disabled {
+    background-color: @g-button-disabled-color;
+    &:focus, &:active {
+        background-color: @g-button-disabled-color;
+    }
+}*/

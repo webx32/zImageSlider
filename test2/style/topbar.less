@@ -1,0 +1,42 @@
+@import 'variables.less';
+@import 'variables-custom.less';
+@import 'mixins.less';
+
+// topbar 
+.cy-topbar {
+    .clearfix();
+    position: relative;
+
+    display: block;
+    width: 100%;
+    height: @topbar-height;
+
+    border-bottom: 1px solid @border-color;
+    background-color: @bg-color;
+    .logo {
+        position: absolute;
+        left: @topbar-left-padding;
+        top: 50%;
+        margin-top: -@topbar-icon-height / 2;
+        .icon-back {
+            display: block;
+            height: @topbar-icon-height;
+            width: @topbar-icon-width;
+        }
+    }
+    .search {
+        position: absolute;
+        right: @topbar-left-padding;
+        top: @topbar-icon-top-padding;
+    }
+    .title {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        text-align: center;
+        color: @title-color;
+        font-size: @font-size-larger;
+        line-height: @topbar-height;
+    }
+}

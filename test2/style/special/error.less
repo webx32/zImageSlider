@@ -1,0 +1,22 @@
+@import '../variables.less';
+@import '../variables-custom.less';
+@import '../mixins.less';
+
+body {
+    background-color: #fff;
+}
+.error-404 {
+    text-align: center;
+    .error-img {
+        display: inline-block;
+        width: 10.7rem;
+        height: 10.7rem;
+        margin-top: 4.8rem;
+    }
+    .error-msg {
+        .style-text(3rem, 3rem, @title-color, @font-size-large);
+    }
+    .error-action {
+        width: 10.7rem;
+    }
+}

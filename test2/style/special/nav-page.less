@@ -1,0 +1,29 @@
+@import '../variables.less';
+@import '../variables-custom.less';
+@import '../mixins.less';
+
+.merchant-access {
+    border-bottom: 1px solid @border-color;
+}
+
+.content-access {
+    .selected-content-video {
+        margin-top: 2rem;
+    }
+}
+
+.internet-access {
+    position: relative;
+    color: @brand-warning;
+    border-bottom: 1px solid @border-color;
+    .icon {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        margin-top: -0.525rem;
+
+        width: 0.6rem;
+        height: 1.05rem;
+        line-height: 3.9rem;
+    }
+}

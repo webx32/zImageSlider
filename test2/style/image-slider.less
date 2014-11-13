@@ -1,0 +1,76 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+// image slider 
+.image-slider {
+    position: relative;
+    display: block;
+    .box-sizing(border-box);
+    width: 100%;
+    min-height: 1px;
+    overflow: hidden;
+}
+.image-list {
+    position: relative;
+    left: -100%;
+    top: 0;
+    z-index: 9;
+
+    display: block;
+    width: 300%;
+    .clearfix();
+    background-color: #fff;
+    .image-item {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        .height-fixed& {
+            background-color: @gray-black;
+            height: 100%;
+            overflow: hidden;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            .height-fixed& {
+                width: auto;
+            }
+        }
+    }
+    .z-item-current {
+        left: 33.33333%;
+    }
+    .z-item-previous {
+        left: 0;
+    }
+    .z-item-next {
+        left: 66.66666%;
+    }
+}
+.slider-indicator {
+    position: absolute;
+    bottom: 0.8rem;
+    left: 9rem;
+    height: 1rem;
+    z-index: 10;
+    .slider-indicator-dot {
+        display: block;
+        float: left;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        border-radius: 50%;
+        background-color: #fff;
+
+        &.active {
+            background-color: @brand-primary;
+        }
+    }
+}
+.z-image-slide-transition {
+    transition: left 0.5s ease;
+}

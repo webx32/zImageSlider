@@ -1,0 +1,41 @@
+.cy-topbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4.4rem;
+  border-bottom: 1px solid #cccccc;
+  background-color: #efefef;
+}
+.cy-topbar:before,
+.cy-topbar:after {
+  content: " ";
+  display: table;
+}
+.cy-topbar:after {
+  clear: both;
+}
+.cy-topbar .logo {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  margin-top: -0.85rem;
+}
+.cy-topbar .logo .icon-back {
+  display: block;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.cy-topbar .search {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+.cy-topbar .title {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #434a54;
+  font-size: 1.5rem;
+  line-height: 4.4rem;
+}

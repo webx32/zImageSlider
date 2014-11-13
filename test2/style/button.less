@@ -1,0 +1,45 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+.btn {
+    .btn(ghost; 7.5rem; 2.5rem; 0.3rem; 1.2rem; #fff; @gray-black);
+}
+.btn.btn-primary {
+    border-color: @brand-primary;
+    color: @brand-primary;
+    &:focus, &:active {
+        background-color: @brand-primary;
+        color: #fff;
+    }
+}
+.btn-reverse {
+    .btn(7.5rem; 2.5rem; 0.3rem; 1.2rem; @gray-black; #fff);
+}
+.btn.btn-block, .btn-reverse.btn-block {
+    height: 3.9rem;
+    width: 100%;
+
+    line-height: 3.9rem;
+    font-size: 1.4rem;
+}
+/*used for normal button
+.btn.btn-primary {
+    background-color: @brand-primary;
+    color: #fff;
+    &:focus, &:active {
+        background-color: darken(@brand-primary, 10%);
+    }
+}
+.btn.btn-block {
+    height: 3.9rem;
+    width: 100%;
+
+    line-height: 3.9rem;
+    font-size: 1.4rem;
+}
+.btn.disabled {
+    background-color: @g-button-disabled-color;
+    &:focus, &:active {
+        background-color: @g-button-disabled-color;
+    }
+}*/

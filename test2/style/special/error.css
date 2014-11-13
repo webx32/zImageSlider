@@ -1,0 +1,22 @@
+body {
+  background-color: #fff;
+}
+.error-404 {
+  text-align: center;
+}
+.error-404 .error-img {
+  display: inline-block;
+  width: 10.7rem;
+  height: 10.7rem;
+  margin-top: 4.8rem;
+}
+.error-404 .error-msg {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #434a54;
+}
+.error-404 .error-action {
+  width: 10.7rem;
+}

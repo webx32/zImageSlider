@@ -1,0 +1,91 @@
+@import '../variables.less';
+@import '../variables-custom.less';
+@import '../mixins.less';
+// merchant-des----商家简介（地址、电话等信息列表）
+.merchant-des {
+    padding-bottom: 0;
+}
+// merchant-activity----商家最新活动列表
+.merchant-activity {
+    .list-vertical {
+        max-height: 13.5rem;
+        overflow: hidden;
+        transition: all 0.3s;
+        .shown& {
+            max-height: 90rem;
+            -webkit-animation: ani-height 0.5s;
+        }
+        .list-item {
+            .icon {
+                width: 2.5rem;
+                height: 1.7rem;
+                margin-top: -0.85rem;
+            }
+
+            :not(.shown)& {
+                &:nth-child(n+3) p{
+                    border-bottom: none;
+                }
+            }
+            .shown& {
+                &:last-child p{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .toggle-more-items {
+        margin-top: 1rem;
+
+        text-align: center;
+        color: @brand-warning;
+        font-size: 1.3rem;
+        line-height: 1;
+        .icon {
+            margin-left: 1rem;
+            line-height: 1.3rem;
+            transition: all 0.4s;
+            .shown& {
+                transform: rotateZ(180deg);
+                -webkit-transform: rotateZ(180deg);
+            }
+        }
+    }
+}
+
+@-webkit-keyframes ani-height {
+    from { max-height: 13.5rem; }
+    to {
+        max-height: 90rem;
+    }
+}
+
+.merchant-images {
+    .z-image-wall.one-line {
+        overflow-x: hidden;
+    }
+    .z-image-item {
+        height: 10rem;
+        overflow: hidden;
+
+        img {
+            opacity: 0;
+        }
+        .fake-cover {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+// contact us------------------
+.merchant-contact {
+    padding-bottom: 0;
+    .content {
+        padding-top: 0;
+    }
+}
