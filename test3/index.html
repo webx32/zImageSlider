@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0,user-scalable=no"
+        name="viewport">
+        <meta name="format-detection" content="telephone=no">
+        <title>
+            网页搜索_美团
+        </title>
+        <link rel="stylesheet" type="text/css" href="zImageSlider.css">
+    </head>
+    <body>
+        <div class="z-slide-wrap">
+            <ul class="nav z-slide-content">
+                <li class="z-slide-item">
+                    <a href="#">
+                        <img src="images/1.jpg">
+                    </a>
+                    <h1 style="position: absolute; left:0; top:0;right:0;bottom:0;margin:auto;">1</h1>
+                </li>
+                <li class="z-slide-item">
+                    <a href="#">
+                        <img src="images/2.jpg">
+                    </a>
+                    <h1 style="position: absolute; left:0; top:0;right:0;bottom:0;margin:auto;">2</h1>
+                </li>
+                <li class="z-slide-item">
+                    <a href="#">
+                        <img src="images/3.jpg">
+                    </a>
+                    <h1 style="position: absolute; left:0; top:0;right:0;bottom:0;margin:auto;">3</h1>
+                </li>
+                <li class="z-slide-item">
+                    <a href="#">
+                        <img src="images/4.jpg">
+                    </a>
+                    <h1 style="position: absolute; left:0; top:0;right:0;bottom:0;margin:auto;">4</h1>
+                </li>
+            </ul>
+        </div>
+        <div style="width:100%; height:680px; background: #ddd;"></div>
+        <script type="text/javascript" src="zImageSlider4.js"></script>
+        <script type="text/javascript">
+        new Slider('.nav', '.nav li', {
+            current: 2,
+            minPercentToSlide: 0.3
+        });
+        document.addEventListener('tap', function(e) {
+            console.log(e);
+            console.log(e.uuid);
+        }, false);
+        document.addEventListener('swipeend', function(e) {
+            console.log(e);
+        }, false);
+        </script>
+    </body>
+
+</html>

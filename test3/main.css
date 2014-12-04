@@ -1,0 +1,43 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #002be5;
+    -webkit-tap-highlight-color:initial;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.show-wrap {
+    overflow: hidden;
+    height: 175px;
+    position: relative;
+}
+.show-wrap ul{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    width: 100%;
+}
+.show-wrap ul li {
+    padding: 0;
+    width: 100%;
+    box-sizing:border-box;
+    position: absolute;
+}
+.show-wrap ul li a img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.show-wrap ul li h1 {
+    text-align: center;
+    color: #690;
+    padding-top: 100px;
+    font-size: 40px;
+}
